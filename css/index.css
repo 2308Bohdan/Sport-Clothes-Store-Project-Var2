@@ -4,4 +4,133 @@
 :root {
   --font-main: "Bebas Neue", cursive;
   --font-additional: "PT Sans", sans-serif;
+  --main-color: #222323;
+  --main-color-light: rgba(34, 35, 35, 0.38);
+  --accent-color: rgb(255, 255, 255);
+  --additionalcolor: rgb(214, 3, 7);
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#text-selection {
+  color: var(--additionalcolor);
+}
+
+section.main-title-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  background-image: url(../img/main-banner-photo.jpeg);
+  background-size: cover;
+  font-family: var(--font-main);
+}
+
+.main-title-block.banner-info p {
+  color: var(-main-color-light) !important;
+}
+
+@media (min-width: 360px) {
+  .banner-info {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .banner-info p {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 980px) {
+  .main-header-container {
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .top-insert-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--additionalcolor);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 14px;
+    font-family: var(--font-additional);
+    font-weight: bold;
+    color: var(--accent-color);
+  }
+
+  .header-info {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: -16px;
+  }
+
+  .header-contacts {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .header-contacts .header-contacts-data {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--font-additional);
+  }
+
+  #main-header.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--main-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-logo {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .menu-liks {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: var(--accent-color);
+  }
+
+  .nav-item {
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .nav-link active {
+    color: var(--accent-color);
+  }
+
+  .social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /*Закончить бургер менюшку!!!*/
 }
