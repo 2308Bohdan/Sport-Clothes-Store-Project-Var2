@@ -31,24 +31,141 @@ section.main-title-block {
   font-family: var(--font-main);
 }
 
-.main-title-block.banner-info p {
-  color: var(-main-color-light) !important;
+.main-title-block .banner-info p {
+  color: var(--main-color-light);
+}
+.banner-info h1 {
+  color: var(--main-color);
+  text-align: left;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.product-categories {
+  color: var(--main-color);
+}
+
+.product-categories .arrivals {
+  background-image: url(../img/new-arrivals.svg);
+  box-sizing: border-box;
+  width: 100%;
+  background-size: cover;
+}
+
+.product-categories .trainers {
+  background-image: url(../img/product-categories-trainers.png);
+  background-size: cover;
+  background-position: 20%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.product-categories .hot-sale {
+  background-image: url(../img/product-categories-hot-sale.png);
+  background-size: cover;
+  background-position: 20%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.product-categories .arrivals h2,
+.product-categories .trainers h2,
+.product-categories .hot-sale h2 {
+  font-family: var(--font-main);
+}
+
+.product-categories .arrivals a,
+.product-categories .trainers a,
+.product-categories .hot-sale a {
+  font-family: var(--font-additional);
+  text-decoration: none;
+  color: var(--main-color);
 }
 
 @media (min-width: 360px) {
-  .banner-info {
+  .main-title-block {
     padding-top: 110px;
     padding-bottom: 110px;
-    padding-left: 24px;
-    padding-right: 24px;
+  }
+
+  .banner-info {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .banner-info p {
     font-size: 22px;
   }
+
+  .banner-info h1 {
+    margin-top: 20px;
+    font-size: 62px;
+  }
+
+  .button-banner-info {
+    margin-top: 50px;
+  }
+
+  .product-categories {
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .product-categories .arrivals {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+
+  .product-categories .arrivals h2,
+  .product-categories .trainers h2,
+  .product-categories .hot-sale h2 {
+    margin-top: 136px;
+    font-size: 38px;
+  }
+
+  .product-categories .trainers,
+  .product-categories .hot-sale {
+    margin-top: 50px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 }
 
-@media (min-width: 980px) {
+@media (min-width: 760px) {
+  .main-title-block {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  .banner-info {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .banner-info p {
+    font-size: 24px;
+  }
+
+  .banner-info h1 {
+    margin-top: 15px;
+    font-size: 93px;
+  }
+
+  .button-banner-info {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 960px) {
   .main-header-container {
     display: flex;
     flex-direction: column-reverse;
@@ -133,4 +250,46 @@ section.main-title-block {
     align-items: center;
   }
   /*Закончить бургер менюшку!!!*/
+  .main-title-block {
+    padding-top: 210px;
+    padding-bottom: 210px;
+  }
+
+  .banner-info {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .banner-info p {
+    font-size: 26px;
+  }
+
+  .banner-info h1 {
+    margin-top: 15px;
+    font-size: 124px;
+    line-height: 1;
+  }
+
+  .button-banner-info {
+    margin-top: 50px;
+  }
+}
+
+/*Controls*/
+
+.button {
+  background-color: #f40106; /* Red */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: var(--main-color);
+  color: white;
 }
