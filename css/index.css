@@ -20,18 +20,27 @@ body {
 }
 
 section.main-title-block {
+  background-image: url(../img/main-banner-photo.jpeg);
+}
+
+section.title-block-trending {
+  background-image: url(../img/title-block-trending.webp);
+  background-position: center;
+}
+section.main-title-block,
+section.title-block-trending {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   box-sizing: border-box;
   width: 100%;
-  background-image: url(../img/main-banner-photo.jpeg);
   background-size: cover;
   font-family: var(--font-main);
 }
 
-.main-title-block .banner-info p {
+.main-title-block .banner-info p,
+.title-block-trending .banner-info p {
   color: var(--main-color-light);
 }
 .banner-info h1 {
@@ -94,18 +103,22 @@ section.main-title-block {
   padding-top: 50px;
 }
 
-.advantages .advantages-info {
+.advantages .advantages-info,
+.season-sale .season-sale-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
-.advantages-info h2 {
+.advantages-info h2,
+.season-sale-info h2 {
   font-family: var(--font-main);
   color: var(--main-color);
 }
 
-.advantages-info {
+.advantages-info p,
+.season-sale-info p {
+  text-align: center;
   font-family: var(--font-additional);
   color: var(--main-color-light);
 }
@@ -167,8 +180,13 @@ section.main-title-block {
   margin-top: 30px;
 }
 
+.season-sale-info p {
+  font-size: 20px;
+}
+
 @media (min-width: 360px) {
-  .main-title-block {
+  .main-title-block,
+  .title-block-trending {
     padding-top: 110px;
     padding-bottom: 110px;
   }
@@ -233,7 +251,8 @@ section.main-title-block {
     padding-right: 24px;
   }
 
-  .advantages-info h2 {
+  .advantages-info h2,
+  .season-sale-info h2 {
     font-size: 38px;
   }
 
@@ -300,10 +319,37 @@ section.main-title-block {
     margin-top: 25px;
     font-size: 16px;
   }
+
+  .season-sale {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .catalog-sale-list {
+    margin-top: 45px;
+  }
+
+  .catalog-sale-list-marg {
+    margin-top: -50px;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalog-sale-item {
+    margin-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media (min-width: 760px) {
-  .main-title-block {
+  .main-title-block,
+  .title-block-trending {
     padding-top: 160px;
     padding-bottom: 160px;
   }
@@ -389,7 +435,8 @@ section.main-title-block {
     margin-bottom: 45px;
   }
 
-  .advantages-info h2 {
+  .advantages-info h2,
+  .season-sale-info h2 {
     font-size: 45px;
   }
 
@@ -425,6 +472,13 @@ section.main-title-block {
   .about-us-info p {
     margin-top: 25px;
     font-size: 16px;
+  }
+
+  .season-sale {
+    padding-top: 100px;
+    padding-bottom: 105px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -513,7 +567,8 @@ section.main-title-block {
     align-items: center;
   }
   /*Закончить бургер менюшку!!!*/
-  .main-title-block {
+  .main-title-block,
+  .title-block-trending {
     padding-top: 210px;
     padding-bottom: 210px;
   }
@@ -527,7 +582,8 @@ section.main-title-block {
     font-size: 26px;
   }
 
-  .banner-info h1 {
+  .banner-info h1,
+  .title-block-trending .block-trending-info h1 {
     margin-top: 15px;
     font-size: 124px;
     line-height: 1;
@@ -595,7 +651,8 @@ section.main-title-block {
     padding-right: 40px;
   }
 
-  .advantages-info h2 {
+  .advantages-info h2,
+  .season-sale-info h2 {
     font-size: 52px;
   }
 
@@ -621,6 +678,13 @@ section.main-title-block {
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .season-sale {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
