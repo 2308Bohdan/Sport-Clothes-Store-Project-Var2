@@ -78,8 +78,10 @@ section.main-title-block {
 .product-categories .arrivals a,
 .product-categories .trainers a,
 .product-categories .hot-sale a {
-  font-family: var(--font-additional);
+  font-family: var(--font-main);
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 400px;
   color: var(--main-color);
 }
 
@@ -118,7 +120,12 @@ section.main-title-block {
     padding-right: 24px;
   }
 
-  .product-categories .arrivals {
+  .arrivals,.trainers,
+  .hot-sale {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-srart;
     padding-top: 33px;
     padding-bottom: 33px;
     padding-left: 33px;
@@ -132,11 +139,9 @@ section.main-title-block {
     font-size: 38px;
   }
 
-  .product-categories .trainers,
-  .product-categories .hot-sale {
+  .trainers,
+  .hot-sale {
     margin-top: 50px;
-    padding-left: 33px;
-    padding-right: 33px;
   }
 }
 
@@ -162,6 +167,48 @@ section.main-title-block {
 
   .button-banner-info {
     margin-top: 50px;
+  }
+
+  .product-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding-top: 105px;
+    padding-bottom: 60px;
+    padding-left: 32px;
+    padding-right:32px;
+  }
+
+  .arrivals, .trainers, .hot-sale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: auto;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .arrivals {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+   .trainers, .hot-sale {
+    flex-basis: 25%;
+    max-width: 25%;
+    margin-top: 31px;
+  }
+
+  .product-categories .arrivals h2,
+  .product-categories .trainers h2,
+  .product-categories .hot-sale h2 {
+    margin-top: 152px;
+    font-size: 45px;
   }
 }
 
@@ -272,6 +319,47 @@ section.main-title-block {
 
   .button-banner-info {
     margin-top: 50px;
+  }
+
+  .product-categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding-top: 120px;
+    padding-left: 40px;
+    padding-right:40px;
+  }
+
+  .arrivals, .trainers, .hot-sale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: auto;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .arrivals {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+   .trainers, .hot-sale {
+    flex-basis: 25%;
+    max-width: 25%;
+    margin-top: 31px;
+  }
+
+  .product-categories .arrivals h2,
+  .product-categories .trainers h2,
+  .product-categories .hot-sale h2 {
+    margin-top: 152px;
+    font-size: 45px;
   }
 }
 
