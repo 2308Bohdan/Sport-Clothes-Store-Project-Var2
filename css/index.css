@@ -135,6 +135,38 @@ section.main-title-block {
   font-size: 16px;
 }
 
+.about-us {
+  background-color: var(--main-color);
+}
+
+.about-us-foto {
+  background-image: url(../img/about-us.jpeg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.about-us {
+  color: var(--accent-color);
+}
+
+.about-us-info h2 {
+  font-family: var(--font-main);
+}
+
+.about-us-info h3,
+.about-us-info p {
+  font-family: var(--font-additional);
+}
+
+.about-us-social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
 @media (min-width: 360px) {
   .main-title-block {
     padding-top: 110px;
@@ -234,6 +266,38 @@ section.main-title-block {
 
   .advantages-list-container p {
     margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .about-us-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about-us-info h2 {
+    font-size: 38px;
+  }
+
+  .about-us-info h3 {
+    font-size: 20px;
+  }
+
+  .about-us-info p {
+    margin-top: 25px;
     font-size: 16px;
   }
 }
@@ -341,6 +405,26 @@ section.main-title-block {
 
   .advantages-list-container {
     margin-top: 0px;
+  }
+
+  .about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .about-us-info h2 {
+    font-size: 45px;
+  }
+  .about-us-info h3 {
+    margin-bottom: 25px;
+  }
+
+  .about-us-info p {
+    margin-top: 25px;
+    font-size: 16px;
   }
 }
 
