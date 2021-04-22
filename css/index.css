@@ -5,7 +5,7 @@
   --font-main: "Bebas Neue", cursive;
   --font-additional: "PT Sans", sans-serif;
   --main-color: #222323;
-  --main-color-light: rgba(34, 35, 35, 0.38);
+  --main-color-light: #717474;
   --accent-color: rgb(255, 255, 255);
   --additionalcolor: rgb(214, 3, 7);
 }
@@ -85,6 +85,56 @@ section.main-title-block {
   color: var(--main-color);
 }
 
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.advantages .advantages-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.advantages-info h2 {
+  font-family: var(--font-main);
+  color: var(--main-color);
+}
+
+.advantages-info {
+  font-family: var(--font-additional);
+  color: var(--main-color-light);
+}
+
+.advantages-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid #71747469;
+  text-align: center;
+}
+
+.advantages-list-container h3 {
+  font-family: var(--font-main);
+  color: var(--main-color);
+}
+
+.advantages-list-container p {
+  font-family: var(--font-additional);
+  color: var(--main-color-light);
+}
+
+.advantages-info p {
+  font-size: 16px;
+}
+
 @media (min-width: 360px) {
   .main-title-block {
     padding-top: 110px;
@@ -120,7 +170,8 @@ section.main-title-block {
     padding-right: 24px;
   }
 
-  .arrivals,.trainers,
+  .arrivals,
+  .trainers,
   .hot-sale {
     display: flex;
     flex-direction: column;
@@ -142,6 +193,48 @@ section.main-title-block {
   .trainers,
   .hot-sale {
     margin-top: 50px;
+  }
+
+  .advantages {
+    padding-bottom: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .advantages-info h2 {
+    font-size: 38px;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 45px;
+  }
+
+  .advantages-list-margin {
+    margin-top: -50px;
+  }
+
+  .advantages-list-container {
+    margin-top: 50px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-right: 27px;
+    padding-left: 27px;
+  }
+
+  .advantages-list-container h3 {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .advantages-list-container p {
+    margin-top: 20px;
+    font-size: 16px;
   }
 }
 
@@ -179,10 +272,12 @@ section.main-title-block {
     padding-top: 105px;
     padding-bottom: 60px;
     padding-left: 32px;
-    padding-right:32px;
+    padding-right: 32px;
   }
 
-  .arrivals, .trainers, .hot-sale {
+  .arrivals,
+  .trainers,
+  .hot-sale {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,9 +291,18 @@ section.main-title-block {
   .arrivals {
     flex-basis: 50%;
     max-width: 50%;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
-   .trainers, .hot-sale {
+  .trainers,
+  .hot-sale {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-left: 20px;
+    padding-right: 20px;
     flex-basis: 25%;
     max-width: 25%;
     margin-top: 31px;
@@ -209,6 +313,34 @@ section.main-title-block {
   .product-categories .hot-sale h2 {
     margin-top: 152px;
     font-size: 45px;
+  }
+
+  .advantages {
+    padding-bottom: 105px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .advantages-info {
+    margin-bottom: 45px;
+  }
+
+  .advantages-info h2 {
+    font-size: 45px;
+  }
+
+  .advantages-list-margin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+    width: 100%;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+
+  .advantages-list-container {
+    margin-top: 0px;
   }
 }
 
@@ -330,10 +462,12 @@ section.main-title-block {
     height: auto;
     padding-top: 120px;
     padding-left: 40px;
-    padding-right:40px;
+    padding-right: 40px;
   }
 
-  .arrivals, .trainers, .hot-sale {
+  .arrivals,
+  .trainers,
+  .hot-sale {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -347,19 +481,62 @@ section.main-title-block {
   .arrivals {
     flex-basis: 50%;
     max-width: 50%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
-   .trainers, .hot-sale {
+  .trainers,
+  .hot-sale {
     flex-basis: 25%;
     max-width: 25%;
     margin-top: 31px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .product-categories .arrivals h2,
   .product-categories .trainers h2,
   .product-categories .hot-sale h2 {
     margin-top: 152px;
-    font-size: 45px;
+    font-size: 52px;
+  }
+
+  .advantages {
+    padding-bottom: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .advantages-info h2 {
+    font-size: 52px;
+  }
+
+  .advantages-info p {
+    font-size: 24px;
+  }
+
+  .advantages-list {
+    margin-top: 50px;
+  }
+
+  .advantages-list-margin {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
+    width: 100%;
+    grid-column-gap: 30px;
+  }
+
+  .advantages-list-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
