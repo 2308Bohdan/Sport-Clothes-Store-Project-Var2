@@ -27,8 +27,15 @@ section.title-block-trending {
   background-image: url(../img/title-block-trending.webp);
   background-position: center;
 }
+
+section.sale-of-the-month {
+  background-image: url(../img/sale-of-the-month-background.png);
+  background-position: center;
+}
+
 section.main-title-block,
-section.title-block-trending {
+section.title-block-trending,
+section.sale-of-the-month {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,6 +52,18 @@ section.title-block-trending {
 }
 .banner-info h1 {
   color: var(--main-color);
+  text-align: left;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+}
+
+section.sale-of-the-month .banner-info p {
+  color: var(--accent-color);
+}
+
+section.sale-of-the-month .banner-info h1 {
+  color: var(--accent-color);
   text-align: left;
   font-weight: 400;
   text-decoration: none;
@@ -184,9 +203,68 @@ section.title-block-trending {
   font-size: 20px;
 }
 
+.catalog-sale-item {
+  display: grid;
+  grid-template-rows: 1fr auto auto auto;
+  grid-template-columns: 1fr;
+}
+
+.catalog-sale-photo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog-sale-item a {
+  margin-top: 24px;
+  font-family: var(--font-additional);
+  font-size: 18px;
+  color: var(--main-color-light);
+  text-decoration: none;
+}
+
+.catalog-sale-item p {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-family: var(--font-additional);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--additionalcolor);
+}
+
+.deal-of-month-info {
+  background-color: var(--main-color);
+  color: var(--accent-color);
+}
+
+.deal-of-month-foto {
+  background-image: url(../img/deal-of-the-month-background.png);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.deal-of-month-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.deal-of-month-info h2 {
+  font-family: var(--font-main);
+}
+
+.deal-of-month-info h3,
+.deal-of-month-info p {
+  font-family: var(--font-additional);
+}
+
 @media (min-width: 360px) {
   .main-title-block,
-  .title-block-trending {
+  .title-block-trending,
+  .sale-of-the-month {
     padding-top: 110px;
     padding-bottom: 110px;
   }
@@ -333,8 +411,6 @@ section.title-block-trending {
 
   .catalog-sale-list-marg {
     margin-top: -50px;
-    margin-right: -15px;
-    margin-left: -15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,14 +418,57 @@ section.title-block-trending {
 
   .catalog-sale-item {
     margin-top: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
+  }
+
+  .deal-of-month-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .deal-of-month-info {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .deal-of-month-info h2 {
+    font-size: 62px;
+  }
+
+  .deal-of-month-info h3 {
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .deal-of-month-info .tall-font {
+    font-size: 52px;
+  }
+
+  .deal-of-month-info p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .deal-of-month-info a {
+    margin-top: 35px;
+    text-decoration: none;
+    color: var(--accent-color);
+  }
+
+  .deal-of-month-timer {
+    margin-top: 35px;
   }
 }
 
 @media (min-width: 760px) {
   .main-title-block,
-  .title-block-trending {
+  .title-block-trending,
+  .sale-of-the-month {
     padding-top: 160px;
     padding-bottom: 160px;
   }
@@ -480,6 +599,71 @@ section.title-block-trending {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .catalog-sale-list-marg {
+    margin-top: -50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+  /*
+    grid-row-gap: 30px;
+    grid-template-areas:
+      "hd mn"
+      "sd ct"
+      "ft ft";
+  }
+  .grid-cat-sale-item-one {
+    grid-area: hd;
+  }
+
+  .grid-cat-sale-item-two {
+    grid-area: mn;
+  }
+
+  .grid-cat-sale-item-three {
+    grid-area: sd;
+  }
+
+  .grid-cat-sale-item-four {
+    grid-area: ct;
+  }
+
+  .grid-cat-sale-item-five {
+    grid-area: ft;
+  }*/
+
+  .deal-of-month-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .deal-of-month-info {
+    padding-top: 130px;
+    padding-bottom: 135px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .deal-of-month-info h2 {
+    font-size: 93px;
+  }
+
+  .deal-of-month-info h3 {
+    margin-top: 20px;
+  }
+
+  .deal-of-month-info .tall-font {
+    font-size: 55px;
+  }
+
+  .deal-of-month-info p {
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: 960px) {
@@ -568,7 +752,8 @@ section.title-block-trending {
   }
   /*Закончить бургер менюшку!!!*/
   .main-title-block,
-  .title-block-trending {
+  .title-block-trending,
+  .sale-of-the-month {
     padding-top: 210px;
     padding-bottom: 210px;
   }
@@ -686,6 +871,31 @@ section.title-block-trending {
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  .catalog-sale-list-marg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .deal-of-month-info {
+    padding-top: 160px;
+    padding-bottom: 170px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .deal-of-month-info h2 {
+    font-size: 124px;
+  }
+
+  .deal-of-month-info a {
+    margin-top: 40px;
+  }
+
+  .deal-of-month-timer {
+    margin-top: 40px;
+  }
 }
 
 /*Controls*/
@@ -703,6 +913,23 @@ section.title-block-trending {
   transition-duration: 0.4s;
 }
 .button:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.button-bright {
+  background-color: var(--accent-color); /* Red */
+  border: none;
+  color: var(--main-color);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+.button-bright:hover {
   background-color: var(--main-color);
   color: white;
 }
