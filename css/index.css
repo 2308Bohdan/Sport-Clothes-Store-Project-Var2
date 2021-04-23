@@ -933,3 +933,32 @@ section.sale-of-the-month .banner-info h1 {
   background-color: var(--main-color);
   color: white;
 }
+
+.countdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+}
+
+.countdown-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #a6acac83;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.countdown-time {
+  color: var(--accent-color);
+  font-family: var(--font-main);
+  font-size: 25px;
+}
+
+.countdown-text {
+  color: #a6acac83;
+  font-family: var(--font-additional);
+  font-size: 14px;
+}
