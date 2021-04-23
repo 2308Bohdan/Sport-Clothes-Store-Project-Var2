@@ -463,6 +463,13 @@ section.sale-of-the-month .banner-info h1 {
   .deal-of-month-timer {
     margin-top: 35px;
   }
+
+  .map-block {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 740px;
+  }
 }
 
 @media (min-width: 760px) {
@@ -895,6 +902,22 @@ section.sale-of-the-month .banner-info h1 {
 
   .deal-of-month-timer {
     margin-top: 40px;
+  }
+
+  /*Черновик*/
+  .new-arrivals {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .arrivals-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
