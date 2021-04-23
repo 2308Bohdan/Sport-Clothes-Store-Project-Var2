@@ -10,21 +10,21 @@ const arrivalsJson =
     {
         "id": "2",
         "link": "adidas-cloudfoam-trainers.html",
-        "image": "../img/reebok-red-duster.png",
+        "image": "../img/asics-jordan.png",
         "productName": "Asics Jordan 2000",
         "price": "$200,00USD"
     },
     {
         "id": "3",
         "link": "adidas-cloudfoam-trainers.html",
-        "image": "../img/reebok-red-duster.png",
+        "image": "../img/puma-textile-running-shoes.png",
         "productName": "Puma Textile Running Shoes",
         "price": "$62,00USD"
     },
     {
         "id": "4",
         "link": "adidas-cloudfoam-trainers.html",
-        "image": "../img/reebok-red-duster.png",
+        "image": "../img/nike-winter-jacket.png",
         "productName": "Nike Winter Jacket in Blue",
         "price": "$85,00USD"
     }
