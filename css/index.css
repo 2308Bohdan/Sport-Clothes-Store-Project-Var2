@@ -10,10 +10,11 @@
   --additionalcolor: rgb(214, 3, 7);
 }
 
+/*
 body {
   max-width: 1200px;
   margin: auto;
-}
+}*/
 
 #text-selection {
   color: var(--additionalcolor);
@@ -1200,9 +1201,9 @@ section.sale-of-the-month .banner-info h1 {
   .sale-category-item-t-shirt-backgr,
   .sale-category-item-jacket-backgr,
   .sale-category-item-all-trainers-backgr {
-    padding: 15px 15px 15px 15px;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding: 115px 15px 15px 15px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .sale-category-item h3 {
@@ -1313,4 +1314,38 @@ section.sale-of-the-month .banner-info h1 {
   color: #a6acac83;
   font-family: var(--font-additional);
   font-size: 14px;
+}
+
+/*TABS*/
+
+.tabs-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-nav-item {
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  flex: 1;
+  padding: 20px;
+  font-family: var(--font-additional);
+  color: var(--main-color-light);
+}
+
+.tabs-nav-item:hover {
+  font-weight: 600;
+}
+
+.tabs-nav-item.is-active {
+  border-color: var(--additionalcolor);
+  border-width: 2px;
+}
+
+.tab {
+  display: none;
+  padding: 20px;
+}
+
+.tab.is-active {
+  display: block;
 }
