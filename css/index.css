@@ -123,20 +123,24 @@ section.sale-of-the-month .banner-info h1 {
 }
 
 .advantages .advantages-info,
-.season-sale .season-sale-info {
+.season-sale .season-sale-info,
+.product .product-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
+
 .advantages-info h2,
-.season-sale-info h2 {
+.season-sale-info h2,
+.product-info h2 {
   font-family: var(--font-main);
   color: var(--main-color);
 }
 
 .advantages-info p,
-.season-sale-info p {
+.season-sale-info p,
+.product-info p {
   text-align: center;
   font-family: var(--font-additional);
   color: var(--main-color-light);
@@ -261,6 +265,125 @@ section.sale-of-the-month .banner-info h1 {
   font-family: var(--font-additional);
 }
 
+.sale-category {
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+
+.sale-category-item-t-shirt-backgr,
+.sale-category-item-jacket-backgr,
+.sale-category-item-all-trainers-backgr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  width: 100%;
+  /*
+  padding-top: 40%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;*/
+}
+
+.sale-category-item-t-shirt-backgr {
+  background-image: url(../img/t-shirt-background.png);
+}
+
+.sale-category-item-jacket-backgr {
+  background-image: url(../img/jacket-background.png);
+}
+
+.sale-category-item-all-trainers-backgr {
+  background-image: url(../img/all-trainers-background.png);
+}
+
+.sale-category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 15px 15px 15px;
+  background-color: #222323e0;
+  width: 100%;
+  text-align: center;
+}
+
+.sale-category-item h3 {
+  color: var(--accent-color);
+  font-family: var(--font-main);
+}
+
+.sale-category-item a {
+  color: var(--accent-color);
+  font-family: var(--font-additional);
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+}
+
+/*FOOTER!!!!!!!!!!!!!!*/
+.footer-container {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo p {
+  color: var(--main-color-light);
+  font-family: var(--font-additional);
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer-nav-list,
+.footer-shop-list,
+.footer-icon-list {
+  color: var(--accent-color);
+}
+
+.footer-nav-list h3,
+.footer-shop-list h3,
+.footer-icon-list h3 {
+  font-family: var(--font-main);
+}
+
+.footer-nav-list a,
+.footer-shop-list a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: var(--font-additional);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-nav-list a:hover,
+.footer-shop-list a:hover {
+  color: var(--additionalcolor);
+  border-bottom: 1px solid rgb(214, 3, 7);
+}
+
+.footer-icon-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rights-block {
+  color: var(--accent-color);
+  font-family: var(--font-main);
+  font-size: 14px;
+}
 @media (min-width: 360px) {
   .main-title-block,
   .title-block-trending,
@@ -470,6 +593,87 @@ section.sale-of-the-month .banner-info h1 {
     width: 100%;
     min-height: 740px;
   }
+
+  .sale-category {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .sale-category-item-t-shirt-backgr,
+  .sale-category-item-jacket-backgr,
+  .sale-category-item-all-trainers-backgr {
+    padding-top: 40%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .sale-category-item h3 {
+    font-size: 30px;
+  }
+
+  .product {
+    padding-bottom: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .product-info h2 {
+    font-size: 38px;
+  }
+
+  .product-info p {
+    font-size: 16px;
+  }
+
+  /*FOOTER!!!!!!!!!!!!!!*/
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 45px;
+  }
+
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav-list,
+  .footer-shop-list,
+  .footer-icon-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .footer-nav-list h3,
+  .footer-shop-list h3,
+  .footer-icon-list h3 {
+    font-size: 22px;
+  }
+
+  .rights-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .rights-block p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 @media (min-width: 760px) {
@@ -670,6 +874,87 @@ section.sale-of-the-month .banner-info h1 {
 
   .deal-of-month-info p {
     margin-top: 20px;
+  }
+
+  .sale-category {
+    padding-left: 32px;
+    padding-right: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-areas:
+      "hd ct"
+      "ft ft"
+      "ft ft";
+  }
+
+  .sale-category-item-box-one {
+    grid-area: hd;
+  }
+
+  .sale-category-item-box-two {
+    grid-area: ct;
+  }
+
+  .sale-category-item-box-three {
+    grid-area: ft;
+  }
+
+  .sale-category-item h3 {
+    font-size: 33px;
+  }
+
+  .product {
+    padding-bottom: 105px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .product-info h2 {
+    font-size: 45px;
+  }
+
+  .product-info p {
+    font-size: 20px;
+  }
+
+  /*FOOTER!!!!!!!!!!!!!!*/
+  .footer-nav {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    padding-top: 70px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 45px;
+  }
+
+  .footer-nav-list,
+  .footer-shop-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .footer-icon-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: -20px;
+  }
+
+  .rights-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -902,6 +1187,40 @@ section.sale-of-the-month .banner-info h1 {
 
   .deal-of-month-timer {
     margin-top: 40px;
+  }
+
+  .sale-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .sale-category-item-t-shirt-backgr,
+  .sale-category-item-jacket-backgr,
+  .sale-category-item-all-trainers-backgr {
+    padding: 15px 15px 15px 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .sale-category-item h3 {
+    font-size: 36px;
+  }
+
+  .product {
+    padding-bottom: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .product-info h2 {
+    font-size: 52px;
+  }
+
+  .product-info p {
+    font-size: 20px;
   }
 
   /*Черновик*/
