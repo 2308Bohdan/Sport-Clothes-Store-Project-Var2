@@ -1147,11 +1147,14 @@ section.sale-of-the-month .banner-info h1 {
     color: var(--accent-color);
   }
 
-  .social-icon {
+  .social-icon-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin-left: 40px;
+    grid-column-gap: 15px;
   }
+
   /*Закончить бургер менюшку!!!*/
   .main-title-block,
   .title-block-trending,
