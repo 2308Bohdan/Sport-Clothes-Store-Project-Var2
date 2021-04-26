@@ -137,6 +137,9 @@ section.sale-of-the-month .banner-info h1 {
 .product-info h2 {
   font-family: var(--font-main);
   color: var(--main-color);
+  border-bottom: 2px solid transparent;
+  border: ;
+  border-color: #8a8d8da2;
 }
 
 .advantages-info p,
@@ -190,6 +193,8 @@ section.sale-of-the-month .banner-info h1 {
 
 .about-us-info h2 {
   font-family: var(--font-main);
+  border-bottom: 2px solid transparent;
+  border-color: var(--additionalcolor);
 }
 
 .about-us-info h3,
@@ -220,7 +225,12 @@ section.sale-of-the-month .banner-info h1 {
   height: 100%;
 }
 
-.catalog-sale-item a {
+.product-sale-item .catalog-sale-photo {
+  margin-bottom: 24px;
+}
+
+.catalog-sale-item a,
+.product-sale-item a {
   margin-top: 24px;
   font-family: var(--font-additional);
   font-size: 18px;
@@ -228,7 +238,8 @@ section.sale-of-the-month .banner-info h1 {
   text-decoration: none;
 }
 
-.catalog-sale-item p {
+.catalog-sale-item p,
+.product-sale-item p {
   margin-top: 16px;
   margin-bottom: 24px;
   font-family: var(--font-additional);
@@ -385,6 +396,7 @@ section.sale-of-the-month .banner-info h1 {
   font-family: var(--font-main);
   font-size: 14px;
 }
+
 @media (min-width: 360px) {
   .main-title-block,
   .title-block-trending,
@@ -630,6 +642,9 @@ section.sale-of-the-month .banner-info h1 {
     font-size: 16px;
   }
 
+  .product-sale-item {
+    margin-bottom: 50px;
+  }
   /*FOOTER!!!!!!!!!!!!!!*/
   .footer-nav {
     display: flex;
@@ -919,6 +934,13 @@ section.sale-of-the-month .banner-info h1 {
 
   .product-info p {
     font-size: 20px;
+  }
+
+  .products-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 30px;
   }
 
   /*FOOTER!!!!!!!!!!!!!!*/
@@ -1224,6 +1246,13 @@ section.sale-of-the-month .banner-info h1 {
     font-size: 20px;
   }
 
+  .products-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+  }
+
   /*Черновик*/
   .new-arrivals {
     display: grid;
@@ -1254,7 +1283,7 @@ section.sale-of-the-month .banner-info h1 {
 /*Controls*/
 
 .button {
-  background-color: #f40106; /* Red */
+  background-color: #f40106;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -1267,6 +1296,23 @@ section.sale-of-the-month .banner-info h1 {
 }
 .button:hover {
   background-color: var(--main-color);
+  color: white;
+}
+
+.button-main-color {
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  padding: 15px 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+.button-main-color:hover {
+  background-color: var(--additionalcolor);
   color: white;
 }
 
@@ -1320,7 +1366,7 @@ section.sale-of-the-month .banner-info h1 {
 
 .tabs-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .tabs-nav-item {
