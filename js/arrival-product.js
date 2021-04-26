@@ -1,5 +1,5 @@
 const arrivalsJson =
-`[
+    [
     {
         "id": "1",
         "link": "adidas-cloudfoam-trainers.html",
@@ -28,7 +28,7 @@ const arrivalsJson =
         "productName": "Nike Winter Jacket in Blue",
         "price": "$85,00USD"
     }
-]`;
+];
 
 function renderArrivals(arrivals) {
     const arrivalsContainer = document.querySelector('.arrivals-list');
@@ -49,7 +49,7 @@ function renderArrivals(arrivals) {
     arrivalsContainer.innerHTML = html;
 }
 
-renderArrivals(JSON.parse(arrivalsJson));
+renderArrivals(arrivalsJson);
 
 
 

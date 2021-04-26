@@ -16,6 +16,20 @@ body {
   margin: auto;
 }*/
 
+#main-navbar {
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--accent-color) !important;
+  font-family: var(--font-main);
+  font-size: 18px;
+}
+
 #text-selection {
   color: var(--additionalcolor);
 }
@@ -138,7 +152,6 @@ section.sale-of-the-month .banner-info h1 {
   font-family: var(--font-main);
   color: var(--main-color);
   border-bottom: 2px solid transparent;
-  border: ;
   border-color: #8a8d8da2;
 }
 
@@ -206,7 +219,31 @@ section.sale-of-the-month .banner-info h1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-top: 30px;
+  margin-top: 20px;
+}
+
+.about-us-social-icon div {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-color: var(--additionalcolor);
+}
+
+.about-us-social-icon div:hover {
+  background-color: white;
+}
+
+.footer-icon-block a {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-color: var(--additionalcolor);
+}
+
+.footer-icon-block a:hover {
+  background-color: white;
 }
 
 .season-sale-info p {
@@ -395,6 +432,44 @@ section.sale-of-the-month .banner-info h1 {
   color: var(--accent-color);
   font-family: var(--font-main);
   font-size: 14px;
+}
+
+.map-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contacts-block {
+  position: relative;
+  bottom: 50px;
+  right: 10%;
+  z-index: 99;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contacts-block h2 {
+  font-family: var(--font-main);
+  color: var(--main-color);
+  font-size: 38px;
+}
+
+.contacts-block p {
+  margin-top: 25px;
+  font-family: var(--font-additional);
+  color: var(--main-color);
+  font-size: 16px;
+}
+
+.contacts-block a {
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: var(--font-additional);
+  color: var(--main-color);
+  font-size: 16px;
 }
 
 @media (min-width: 360px) {
@@ -644,6 +719,19 @@ section.sale-of-the-month .banner-info h1 {
 
   .product-sale-item {
     margin-bottom: 50px;
+  }
+
+  /*MAP*/
+  .contacts-block {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 40px;
+    top: 650px;
+    left: 40px;
+  }
+  .map {
+    min-height: 740px;
+    width: auto;
   }
   /*FOOTER!!!!!!!!!!!!!!*/
   .footer-nav {
@@ -1060,10 +1148,9 @@ section.sale-of-the-month .banner-info h1 {
   }
 
   .social-icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   /*Закончить бургер менюшку!!!*/
   .main-title-block,

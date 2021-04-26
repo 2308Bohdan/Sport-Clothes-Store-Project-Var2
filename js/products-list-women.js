@@ -1,4 +1,5 @@
-const arrivalsJson =
+(() => {
+    const arrivalsJson =
 `[
     {
         "id": "1",
@@ -50,3 +51,5 @@ function renderArrivals(arrivals) {
 }
 
 renderArrivals(JSON.parse(arrivalsJson));
+
+})();
