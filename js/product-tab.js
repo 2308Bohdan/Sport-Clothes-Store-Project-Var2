@@ -1,7 +1,6 @@
-let tab = function () {
-    let tabNav = document.querySelectorAll('.tabs-nav-item'),
-        tabContent = document.querySelectorAll('.tab'),
-        tabName;
+const tab = function () {
+    const tabNav = document.querySelectorAll('.tabs-nav-item');
+    const tabContent = document.querySelectorAll('.tab');
 
     tabNav.forEach(item => {
         item.addEventListener('click', selectTabNav)
@@ -12,7 +11,7 @@ let tab = function () {
             item.classList.remove('is-active');
         });
         this.classList.add('is-active');
-        tabName = this.getAttribute('data-tab-name');
+        const tabName = this.getAttribute('data-tab-name');
         selectTabContent(tabName);
     }
 
