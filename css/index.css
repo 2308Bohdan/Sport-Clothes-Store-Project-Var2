@@ -439,6 +439,61 @@ section.sale-of-the-month .banner-info h1 {
   font-weight: 600;
 }
 
+.subskibe-block {
+  padding-top: 35px;
+  padding-bottom: 45px;
+  background-color: #e7e7e7;
+}
+
+.subskibe-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.subskibe-info img {
+  margin: 15px;
+}
+
+.subskibe-info p {
+  margin-top: 20px;
+  font-family: var(--font-additional);
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.subskibe-form {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.subskibe-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  font-family: var(--font-additional);
+  font-size: 14px;
+  height: 50px;
+  background-color: #d7d7d7;
+}
+
+.email-input:hover {
+  border: 2px solid transparent;
+  border-color: var(--additionalcolor);
+}
+
 /*FOOTER!!!!!!!!!!!!!!*/
 .footer-container {
   background-color: var(--main-color);
@@ -499,6 +554,8 @@ section.sale-of-the-month .banner-info h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .contacts-block {
@@ -736,13 +793,6 @@ section.sale-of-the-month .banner-info h1 {
     margin-top: 35px;
   }
 
-  .map-block {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 740px;
-  }
-
   .sale-category {
     display: grid;
     grid-template-columns: 1fr;
@@ -811,7 +861,22 @@ section.sale-of-the-month .banner-info h1 {
     margin-top: 45px;
   }
 
+  .subskibe-block {
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
   /*MAP*/
+  .map-block {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 740px;
+    z-index: 1;
+  }
+
   .contacts-block {
     margin-left: 30%;
     margin-right: 30%;
@@ -1145,6 +1210,23 @@ section.sale-of-the-month .banner-info h1 {
     font-size: 45px;
   }
 
+  .subskibe-block {
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .subskibe-info {
+    padding-right: 15px;
+  }
+
+  .email-input {
+    min-width: 200px;
+  }
+
   /*FOOTER!!!!!!!!!!!!!!*/
   .footer-nav {
     display: grid;
@@ -1473,6 +1555,15 @@ section.sale-of-the-month .banner-info h1 {
 
   .blog-container {
     margin-top: 50px;
+  }
+
+  .subskibe-block {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .email-input {
+    min-width: 300px;
   }
 
   /*Черновик*/
