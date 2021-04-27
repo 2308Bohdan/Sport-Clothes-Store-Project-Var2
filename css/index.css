@@ -10,11 +10,10 @@
   --additionalcolor: rgb(214, 3, 7);
 }
 
-/*
 body {
   max-width: 1200px;
   margin: auto;
-}*/
+}
 
 #main-navbar {
   padding: 0;
@@ -196,8 +195,6 @@ section.sale-of-the-month .banner-info h1 {
   background-image: url(../img/about-us.jpeg);
   background-size: cover;
   background-position: center;
-  box-sizing: border-box;
-  width: 100%;
 }
 
 .about-us {
@@ -341,11 +338,6 @@ section.sale-of-the-month .banner-info h1 {
   background-position: center;
   box-sizing: border-box;
   width: 100%;
-  /*
-  padding-top: 40%;
-  padding-bottom: 5%;
-  padding-left: 5%;
-  padding-right: 5%;*/
 }
 
 .sale-category-item-t-shirt-backgr {
@@ -388,6 +380,63 @@ section.sale-of-the-month .banner-info h1 {
   flex-direction: column;
   align-items: center;
   padding-top: 90px;
+}
+
+.brands-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: auto;
+}
+
+.images img {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-color: #8a8d8da2;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.blog h2 {
+  font-family: var(--font-main);
+  color: (var(--main-color));
+  border-bottom: 2px solid transparent;
+  border-color: #8a8d8da2;
+}
+
+.blog p {
+  font-family: var(--font-additional);
+  color: var(--main-color-light);
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-color: #8a8d8da2;
+}
+
+.blog-container h3 {
+  font-family: var(--font-additional);
+  color: var(--main-color-light);
+  font-size: 24px;
+  font-weight: 600;
 }
 
 /*FOOTER!!!!!!!!!!!!!!*/
@@ -733,6 +782,35 @@ section.sale-of-the-month .banner-info h1 {
     margin-bottom: 50px;
   }
 
+  .brands-carousel {
+    margin-top: 90px;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 30px;
+  }
+
+  .images img {
+    width: 80%;
+  }
+
+  .blog {
+    padding-bottom: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .blog h2 {
+    font-size: 38px;
+  }
+
+  .blog-container {
+    margin-top: 45px;
+  }
+
   /*MAP*/
   .contacts-block {
     margin-left: 30%;
@@ -1041,6 +1119,30 @@ section.sale-of-the-month .banner-info h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 30px;
+  }
+
+  .brands-carousel {
+    margin-top: 105px;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .images img {
+    width: 20%;
+  }
+
+  .blog {
+    padding-bottom: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .blog h2 {
+    font-size: 45px;
   }
 
   /*FOOTER!!!!!!!!!!!!!!*/
@@ -1355,6 +1457,24 @@ section.sale-of-the-month .banner-info h1 {
     grid-column-gap: 30px;
   }
 
+  .brands-carousel {
+    margin-top: 120px;
+  }
+
+  .blog {
+    padding-bottom: 110px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .blog h2 {
+    font-size: 52px;
+  }
+
+  .blog-container {
+    margin-top: 50px;
+  }
+
   /*Черновик*/
   .new-arrivals {
     display: grid;
@@ -1496,4 +1616,35 @@ section.sale-of-the-month .banner-info h1 {
 
 .tab.is-active {
   display: block;
+}
+
+/*Shift arrows*/
+.brands-carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands-carousel div span {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.brands-carousel div span:hover {
+  background-color: var(--additionalcolor);
+  color: var(--accent-color);
+}
+
+.previous {
+  background-color: #ddd;
+  color: var(--main-color);
+}
+
+.nexti {
+  background-color: #ddd;
+  color: var(--main-color);
+}
+
+.round {
+  border-radius: 50%;
 }
