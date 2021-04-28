@@ -1,6 +1,6 @@
 const carouselImages = [
     'img/logo-adidas.png',
-    'img/logo-asics.png',
+    'img/logo-asics.svg',
     'img/logo-new-balance.png',
     'img/logo-nike.png',
     'img/logo-reebok.png'
@@ -9,10 +9,10 @@ const carouselImages = [
 let currentIdx = 0;
 
 function showCurrentImage() {
-    const imgContainer1 = document.querySelector('.brands-carousel .image1');
-    const imgContainer2 = document.querySelector('.brands-carousel .image2');
-    const imgContainer3 = document.querySelector('.brands-carousel .image3');
-    const imgContainer4 = document.querySelector('.brands-carousel .image4');
+    const imgContainer1 = document.querySelector('.brands-carousel .images .image1');
+    const imgContainer2 = document.querySelector('.brands-carousel .images .image2');
+    const imgContainer3 = document.querySelector('.brands-carousel .images .image3');
+    const imgContainer4 = document.querySelector('.brands-carousel .images .image4');
     const img2Idx = currentIdx + 1 > carouselImages.length - 1 ? 0 : currentIdx + 1;      
     const img3Idx = img2Idx + 1 > carouselImages.length - 1 ? 0 : img2Idx + 1;
     const img4Idx = img3Idx + 1 > carouselImages.length - 1 ? 0 : img3Idx + 1;

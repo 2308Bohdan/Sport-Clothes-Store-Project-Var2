@@ -11,7 +11,7 @@
 }
 
 body {
-  max-width: 1200px;
+  max-width: 1296px;
   margin: auto;
 }
 
@@ -29,7 +29,7 @@ body {
   font-size: 18px;
 }
 
-#text-selection {
+.text-selection {
   color: var(--additionalcolor);
 }
 
@@ -44,6 +44,11 @@ section.title-block-trending {
 
 section.sale-of-the-month {
   background-image: url(../img/sale-of-the-month-background.png);
+  background-position: center;
+}
+
+section.info-about-brands-cont {
+  background-image: url(../img/about-brands-background.png);
   background-position: center;
 }
 
@@ -123,7 +128,6 @@ section.sale-of-the-month .banner-info h1 {
   font-family: var(--font-main);
   text-decoration: none;
   font-size: 14px;
-  font-weight: 400px;
   color: var(--main-color);
 }
 
@@ -382,6 +386,97 @@ section.sale-of-the-month .banner-info h1 {
   padding-top: 90px;
 }
 
+.new-arrivals {
+  padding-bottom: 60px;
+}
+
+.arrivals-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.arrivals-info h2 {
+  font-family: var(--font-main);
+  color: var(--main-color);
+  border-bottom: 2px solid transparent;
+  border-color: var(--main-color-light);
+}
+
+.arrivals-info p {
+  margin-top: 20px;
+  font-family: var(--font-additional);
+  font-size: 20px;
+  color: var(--main-color-light);
+}
+
+.arrivals-info a {
+  margin-top: 35px;
+}
+
+.arrival {
+  display: grid;
+  grid-template-rows: 1fr auto auto auto;
+  grid-template-columns: 1fr;
+  margin-top: 30px;
+}
+
+.arrival img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.arrival a {
+  margin-top: 24px;
+  font-family: var(--font-main);
+  color: var(--main-color-light);
+  font-size: 18px;
+}
+
+.arrival p {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-family: var(--font-main);
+  font-size: 18px;
+  color: var(--additionalcolor);
+}
+
+.info-about-brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.info-about-brands h1 {
+  font-family: var(--font-main);
+  color: var(--accent-color);
+}
+
+.info-about-brands-cont .info-about-brands .info-about-brands-transparency {
+  color: var(--main-color-light);
+  font-family: var(--font-main);
+}
+
+.info-about-brands p,
+.info-about-brands ul {
+  margin-top: 20px;
+  font-family: var(--font-additional);
+  font-size: 20px;
+  color: var(--accent-color);
+}
+
+.info-about-brands ul li {
+  list-style-type: none;
+}
+
+.info-about-brands ul li::before {
+  content: "❤";
+}
+
 .brands-carousel {
   display: flex;
   flex-direction: row;
@@ -409,7 +504,7 @@ section.sale-of-the-month .banner-info h1 {
 
 .blog h2 {
   font-family: var(--font-main);
-  color: (var(--main-color));
+  color: var(--main-color);
   border-bottom: 2px solid transparent;
   border-color: #8a8d8da2;
 }
@@ -494,6 +589,11 @@ section.sale-of-the-month .banner-info h1 {
   border-color: var(--additionalcolor);
 }
 
+.map {
+  min-height: 740px;
+  width: auto;
+}
+
 /*FOOTER!!!!!!!!!!!!!!*/
 .footer-container {
   background-color: var(--main-color);
@@ -521,6 +621,8 @@ section.sale-of-the-month .banner-info h1 {
 .footer-shop-list h3,
 .footer-icon-list h3 {
   font-family: var(--font-main);
+  border-bottom: 2px solid transparent;
+  border-color: var(--additionalcolor);
 }
 
 .footer-nav-list a,
@@ -550,6 +652,7 @@ section.sale-of-the-month .banner-info h1 {
   font-size: 14px;
 }
 
+/*
 .map-block {
   display: flex;
   flex-direction: row;
@@ -557,7 +660,7 @@ section.sale-of-the-month .banner-info h1 {
   position: relative;
   z-index: 1;
 }
-
+*/
 .contacts-block {
   position: relative;
   bottom: 50px;
@@ -590,7 +693,26 @@ section.sale-of-the-month .banner-info h1 {
   font-size: 16px;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
+  /*Burger*/
+  .navbar {
+    background-color: var(--main-color);
+  }
+
+  .main-header-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+  }
+
+  .social-icon-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  /*End burger nav*/
+
   .main-title-block,
   .title-block-trending,
   .sale-of-the-month {
@@ -633,7 +755,6 @@ section.sale-of-the-month .banner-info h1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-srart;
     padding-top: 33px;
     padding-bottom: 33px;
     padding-left: 33px;
@@ -832,6 +953,67 @@ section.sale-of-the-month .banner-info h1 {
     margin-bottom: 50px;
   }
 
+  .new-arrivals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .arrivals-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+
+  .arrivals-info h2 {
+    font-size: 38px;
+  }
+
+  .new-arrivals .arrivals-list {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 15px;
+  }
+
+  .info-about-brands-cont {
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .info-about-brands {
+    margin-top: 50px;
+  }
+
+  .info-about-brands h1 {
+    margin-top: 20px;
+    font-size: 62px;
+  }
+
+  .info-about-brands-cont .info-about-brands .info-about-brands-transparency {
+    font-size: 22px;
+  }
+
+  .info-about-brands a {
+    margin-top: 35px;
+  }
+
+  .arrivals-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .brands-carousel {
     margin-top: 90px;
   }
@@ -870,6 +1052,11 @@ section.sale-of-the-month .banner-info h1 {
 
   /*MAP*/
   .map-block {
+    display: flex;
+    position: relative;
+  }
+
+  .map {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -880,14 +1067,14 @@ section.sale-of-the-month .banner-info h1 {
   .contacts-block {
     margin-left: 30%;
     margin-right: 30%;
-    padding: 40px;
-    top: 650px;
-    left: 40px;
-  }
-  .map {
-    min-height: 740px;
     width: auto;
+    position: absolute;
+    z-index: 99;
+    padding: 40px;
+    top: 250px;
+    left: 140px;
   }
+
   /*FOOTER!!!!!!!!!!!!!!*/
   .footer-nav {
     display: flex;
@@ -981,7 +1168,6 @@ section.sale-of-the-month .banner-info h1 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: auto;
     margin-top: 30px;
     margin-left: 15px;
     margin-right: 15px;
@@ -1074,14 +1260,13 @@ section.sale-of-the-month .banner-info h1 {
     margin-top: -50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-column-gap: 30px;
-  }
-  /*
     grid-row-gap: 30px;
     grid-template-areas:
       "hd mn"
       "sd ct"
+      "ft ft"
       "ft ft";
   }
   .grid-cat-sale-item-one {
@@ -1102,7 +1287,7 @@ section.sale-of-the-month .banner-info h1 {
 
   .grid-cat-sale-item-five {
     grid-area: ft;
-  }*/
+  }
 
   .deal-of-month-container {
     display: grid;
@@ -1184,6 +1369,54 @@ section.sale-of-the-month .banner-info h1 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 30px;
+  }
+
+  .new-arrivals {
+    padding-top: 105px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .arrivals-info h2 {
+    font-size: 45px;
+  }
+
+  .new-arrivals .arrivals-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info-about-brands-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". ct";
+    padding-top: 100px;
+    padding-bottom: 105px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .info-about-brands {
+    grid-area: ct;
+  }
+
+  .info-about-brands {
+    margin-top: 30px;
+  }
+
+  .info-about-brands h1 {
+    margin-top: 15px;
+    font-size: 93px;
+  }
+
+  .info-about-brands-cont .info-about-brands .info-about-brands-transparency {
+    font-size: 23px;
+  }
+
+  .info-about-brands a {
+    margin-top: 35px;
   }
 
   .brands-carousel {
@@ -1271,6 +1504,7 @@ section.sale-of-the-month .banner-info h1 {
     flex-direction: column-reverse;
     box-sizing: border-box;
     width: 100%;
+    padding: 0;
   }
 
   .top-insert-container {
@@ -1321,6 +1555,13 @@ section.sale-of-the-month .banner-info h1 {
     padding-right: 15px;
     padding-left: 15px;
   }
+
+  .navbar-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
   .navbar-logo {
     margin-left: 20px;
     margin-right: 20px;
@@ -1344,14 +1585,14 @@ section.sale-of-the-month .banner-info h1 {
   }
 
   .social-icon-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-left: 140px;
-    grid-column-gap: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
   }
 
-  /*Закончить бургер менюшку!!!*/
+  /*End burger nav*/
+
   .main-title-block,
   .title-block-trending,
   .sale-of-the-month {
@@ -1398,7 +1639,6 @@ section.sale-of-the-month .banner-info h1 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: auto;
     margin-top: 30px;
     margin-left: 15px;
     margin-right: 15px;
@@ -1539,6 +1779,35 @@ section.sale-of-the-month .banner-info h1 {
     grid-column-gap: 30px;
   }
 
+  .new-arrivals {
+    padding-top: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .arrivals-info h2 {
+    font-size: 52px;
+  }
+
+  .info-about-brands-cont {
+    padding-top: 110px;
+    padding-bottom: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .info-about-brands h1 {
+    font-size: 124px;
+  }
+
+  .info-about-brands-cont .info-about-brands .info-about-brands-transparency {
+    font-size: 24px;
+  }
+
+  .info-about-brands a {
+    margin-top: 40px;
+  }
+
   .brands-carousel {
     margin-top: 120px;
   }
@@ -1567,7 +1836,7 @@ section.sale-of-the-month .banner-info h1 {
   }
 
   /*Черновик*/
-  .new-arrivals {
+  /*.new-arrivals {
     display: grid;
     grid-template-columns: 20% 80%;
     padding-top: 120px;
@@ -1590,7 +1859,7 @@ section.sale-of-the-month .banner-info h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
+  }*/
 }
 
 /*Controls*/
@@ -1646,6 +1915,24 @@ section.sale-of-the-month .banner-info h1 {
   color: white;
 }
 
+.button-transparency {
+  border: 2px solid transparent;
+  border-color: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+.button-transparency:hover {
+  background-color: white;
+  color: black;
+}
+
+/*Countdown*/
 .countdown {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
