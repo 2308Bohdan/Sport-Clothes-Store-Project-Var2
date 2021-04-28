@@ -652,16 +652,6 @@ section.sale-of-the-month .banner-info h1 {
   font-size: 14px;
 }
 
-/*
-.map-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-}
-*/
-
 .map-block {
   display: flex;
   position: relative;
